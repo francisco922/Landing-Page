@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset>
+            <!--OBS: BOTÃO DE RADIO SO PODE MARCAR UMA OPÇÃO CO CHECKED-->
+            <legend>Tipo</legend>
+            <input type="radio" name="ANTIMOFO" id="iantimofo" value="ANTIMOFO" checked><label for="iantimofo">ANTIMOFO</label><br>
+            <input type="radio" name="ANTIMOFO" id="iantiacaro" value="ANTIACARO"><label for="iantiacaro">ANTIACARO</label><br>
+            <!--PARA MARCAR E DESMARCAR É SO USAR O MESMO NOME EM(NAME)-->
+        </fieldset>
+
+        <fieldset>
+            <legend>Bonecas Favoritas</legend>
+            <input type="checkbox" name="ibonanti" id="ibonanti" value="bonecpanos" checked><label for="ibonanti">Bonecas de Pano antimofo</label><br>
+            <input type="checkbox" name="ibonecorti" id="ibonecorti" value="bonecort"><label for="ibonecorti">Bonecas de Cortinas</label> <br>
+            <input type="checkbox" name="bonecpanos" id="ibonetrave" value="bonetrave"><label for="ibonetrave">Bonecas Travessas</label><br>
+        </fieldset>
+        <p>
+            <input type="submit" value="ENVAR">
+            <input type="reset" value="LIMPAR">
+        </p>
+    </form>
+    
+</body>
+</html>
